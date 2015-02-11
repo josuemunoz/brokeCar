@@ -34,6 +34,8 @@ Josue Munoz
 	<preference name="detect-data-types" 			value="true" />
 	
 	<gap:plugin name="de.appplant.cordova.plugin.local-notification" />
+	<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.7.5" />
+
 <!--
 <icon src="assets/splash/ICON.png" />
 <gap:splash src="assets/splash/xhdpi.png" />
