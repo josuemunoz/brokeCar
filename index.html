@@ -63,4 +63,37 @@
 </div>
 
 </body>
+
+<script>
+	$(document).ready( function(){
+	
+	//window.plugin.notification.local.add({ message: 'Dont forget to rate my app!' });
+
+	
+	$.getJSON("http://45graphics.net/api/index.php?table=web_sites", function(info){
+	
+		$("ul").empty();
+		for(var i=0; i<info.length; i++){
+				//console.log(info[i]);
+			var li = document.createElement("li");
+			var a  = document.createElement("a");
+				
+				li.appendChild(a);
+				a.innerHTML = info[i].name;
+				a.setAttribute("id", info[i].webId);
+				a.setAttribute("rel", i);
+				a.setAttribute("title", info[i].notes);
+				a.setAttribute("href", "#page2");
+				
+				//var ready = li.appendChild(a);
+				$("ul").append(li);
+			
+			//$("ul").append("<li><a id="+ info[i].id+ " title="+ info[i].notes +" href="#page2">"+info[i].to_do+"</a></li>");
+			$("ul").listview('refresh');
+						}
+	});
+	})
+</script>
+
+
 </html>
