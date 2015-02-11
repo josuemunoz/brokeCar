@@ -68,8 +68,8 @@
 	$(document).ready( function(){
 	
 	//window.plugin.notification.local.add({ message: 'Dont forget to rate my app!' });
-	alert("hi Josue!");
-    window.plugin.notification.local.add({ message: 'Great app!' });
+	//alert("hi Josue!");
+   // window.plugin.notification.local.add({ message: 'Great app!' });
 	
 	$.getJSON("http://45graphics.net/api/index.php?table=web_sites", function(info){
 	
@@ -97,9 +97,9 @@
 	
 	document.addEventListener('deviceready', function () {
     // window.plugin.notification.local is now available
-    
+     window.plugin.notification.local.add({ message: 'Great app!' });
 
-}, false);
+});
 </script>
 
 
