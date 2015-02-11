@@ -33,7 +33,7 @@ Josue Munoz
 	<preference name="ios-statusbarstyle" 			value="black-opaque" />
 	<preference name="detect-data-types" 			value="true" />
 	
-	
+	<gap:plugin name="org.apache.cordova.device" version="0.2.8" />
 	<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.7.5" />
 
 <!--
